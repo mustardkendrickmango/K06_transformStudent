@@ -18,10 +18,11 @@
 				margin: 0 auto 110px;
 				border: 3px solid black;
 				padding: 40px;
+				margin-top:230px;	
 			}
 			#deck div{
 				border: 3px solid black;
-				height: 40vh;
+				height: 25vh;
 				width: 40vh;
 				background-color: white;
 				color: red;
@@ -29,29 +30,42 @@
 				padding: 5px;
 				font-weight: bold;
 				position: absolute;
+				margin-left: 250px;
+				margin-top: 50px;
 			}
-			#deck div:hover{
+			#deck div:hover, #deck div:focus{
 				border: 3px solid yellow;
 			}
 			#deck div:first-child:hover{
 				background-color: yellow;
 				z-index: 1;
+				transform: rotate(-60deg);
+  				transform-origin: 0% 100%;
 			}
 			#deck div:nth-child(2):hover{
 				background-color: orange;
 				z-index: 2;
+				transform: rotate(-40deg);
+  				transform-origin: 0% 100%;
 			}
 			#deck div:nth-child(3):hover{
 				background-color: green;
 				z-index: 3;
+				transform: rotate(-20deg);
+  				transform-origin: 0% 100%;
 			}
 			#deck div:nth-child(4):hover{
 				background-color: blue;
 				z-index: 4;
+				transform: rotate(0deg);
+  				transform-origin: 0% 100%;
 			}
 			#deck div:nth-child(5):hover{
 				background-color: violet;
 				z-index: 5;
+				transform: rotate(20deg);
+  				transform-origin: 0% 100%;
+				
 			}
 			a {
 				text-decoration: none;
